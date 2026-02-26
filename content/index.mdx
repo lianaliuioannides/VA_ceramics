@@ -55,10 +55,23 @@ Picture two source IIIF collections with digitized items relating to a famous au
 
 <CanopyDiagram />
 
-Comprehensive [documentation](https://canopy-iiif.github.io/app/docs/) is integrated into the application and serves as both a development guide and a demonstration of Canopy's potential for digital scholarship and humanities projects. To highlight what Canopy can do, this paragraph is authored in markdown from [a simple text file](https://github.com/canopy-iiif/template/blob/main/content/about/index.mdx?plain=1) and below is an example of an `<Image>` component rendering a IIIF image resource along with an inline annotation and caption. This same image is provided by Northwestern University Libraries as a [IIIF Manifest](https://api.dc.library.northwestern.edu/api/v2/works/4bdb5a22-6c7f-498d-8e6e-e49ea9bc4778?as=iiif) from their [Digital Collections platform](https://dc.library.northwestern.edu/items/4bdb5a22-6c7f-498d-8e6e-e49ea9bc4778) and [aggregated into this project](https://canopy-iiif.github.io/app/works/the-town-and-pass-of-boondi-in-rajpootana.html) as a static page during the Canopy build process.
+<Image
+  src="https://assets-cdn.vam.ac.uk/2016/12/16/10/58/48/c30e70e0-9282-43ec-a090-c07f9c0ee59c/2006AT9711_2560.jpg"
+  isTiledImage
+  alt="Flask, 1403 – 24, Jingdezhen, China"
+  caption="Flask, 1403 – 24, Jingdezhen, China"
+/>
 
 <Image
-  src="https://iiif.dc.library.northwestern.edu/iiif/3/138a94b0-175a-4152-98c7-df58661ce7d5"
+  src="https://assets-cdn.vam.ac.uk/2016/12/16/10/58/48/c30e70e0-9282-43ec-a090-c07f9c0ee59c/2006AT9711_2560.jpg"
+    isTiledImage={true}
+    height="500px"
+    alt="Test 1"
+    caption="The town & pass of Boondi, in Rajpootana - Situated on a southern slope of a hill at the end of a long range, the town of Boondi was the capital of the Rajput principality of that name. The palace of the Raja is a large masonry stone building about half way up the hill, according to Grindlay, with a kind of fortification extending to the top."
+/>
+
+<Image
+src="https://iiif.dc.library.northwestern.edu/iiif/3/138a94b0-175a-4152-98c7-df58661ce7d5"
   isTiledImage={true}
   height="500px"
   alt="Painting of the The town & pass of Boondi, in Rajpootana"
